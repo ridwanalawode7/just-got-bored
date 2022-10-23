@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.grand-container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card-container {
+    width: 300px;
+}
+
+#test1 {
+    /* animation: scroll 1000ms; */
+    transform-origin: center;
+    animation: scroll 10000ms linear 0s infinite forwards;
+    /* transform: translateX(-300px); */
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }   
+
+    to {
+        transform: translateX(-300px);
+    }
+}
